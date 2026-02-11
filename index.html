@@ -102,7 +102,7 @@
     
     <!-- Footer -->
     <footer class="text-center text-sm text-white text-opacity-50 p-4 absolute bottom-0 w-full z-20">
-        &copy; 2025 Weather App. All rights reserved.
+        &copy; <span id="year"></span> Christian Brioso | Weather App. All rights reserved.
     </footer>
 
     <!-- JavaScript for fetching data and updating the UI -->
@@ -376,6 +376,9 @@
             // Start the canvas animation when the DOM is ready
             initCanvas();
         });
+
+document.getElementById("year").innerHTML = new Date().getFullYear();
+        
     </script>
 </body>
 </html>
